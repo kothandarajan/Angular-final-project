@@ -1,0 +1,25 @@
+#header {
+
+    background-color: blue;
+    color: aliceblue;
+    height: 50px;
+
+}
+
+#select{
+
+    height: 30px;
+}
+
+
+#dbtn{
+
+    background-color: rgb(160, 205, 112);
+    color: black;
+    height: 25px;
+    width:  350px;
+    margin-left : 50px;
+    margin-top : 15px;
+    text-align: center;
+
+}

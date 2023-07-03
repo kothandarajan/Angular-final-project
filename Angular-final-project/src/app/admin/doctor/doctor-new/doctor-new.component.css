@@ -1,0 +1,45 @@
+.rform {
+    border: 2px solid rgb(74, 72, 72);
+    padding: 20px;
+    margin: 30px;
+    width: 800px;
+
+}
+
+
+.toggle {
+    background-color: yellow;
+    width : 300px;
+    height: 25px;
+    margin-left: 20px;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .untoggle {
+    background-color: aqua;
+    width : 300px;
+    height: 25px;
+    padding: 5px;
+    margin-left: 20px;
+    font-weight: bold;
+    
+  }
+
+  select {
+
+    height: 30px;
+  }
+
+  
+
+  /*
+  #Togglebtn{
+
+    background-color: red
+  }
+
+  */
+  
+
+  

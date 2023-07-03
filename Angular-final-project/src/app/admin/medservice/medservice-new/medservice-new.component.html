@@ -1,0 +1,30 @@
+<div class="rform">
+    <h3> New Medical Service</h3>
+    <form [formGroup]="eform" (submit)="postMedService()">
+        <table>
+            <tr>
+                <td class="item-label"> Title [min 3 chars]</td>
+                <td><input type="text" class="medium-input" formControlName="title"></td>
+            </tr>
+            <tr>
+                <td class="item-label"> image Name </td>
+                <td><input type="text" class="medium-input" formControlName="image"></td>
+            </tr>
+
+            <tr>
+                <td class="item-label"> Description [min 20 chars] </td>
+                <td><textarea class="large-input" formControlName="description"></textarea></td>
+            </tr>
+            <tr>
+
+                <td style="text-align: center" colspan="2">
+                    <button mat-raised-button color="primary" type="submit">
+                        Post Medical Service</button>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+
+      
+</div>

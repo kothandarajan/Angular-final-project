@@ -1,0 +1,16 @@
+<div class="details">
+    <h1>{{current.title}}</h1>
+    <div class="description">
+        <div class="left">
+            <img src="http://localhost:8086/{{current.image}}">
+        </div>
+        <div class="right">
+             <ul>
+                 <li *ngFor="let x of current.description"> {{x}}</li>
+             </ul>
+        </div>
+    </div>
+</div>
+
+
+

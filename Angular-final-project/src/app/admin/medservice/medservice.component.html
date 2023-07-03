@@ -1,0 +1,32 @@
+<div id="header">
+    <button id="sbtn" (click)="toggle()"> New Medical service </button>
+</div>
+
+
+<div id="services" *ngIf="!meddetform&&!Newmedserform">
+    <span> <h2 style="margin-left: 20px;"> Medical Services </h2> </span>
+    
+    <app-medservice-box *ngFor="let x of medservices" [medservice]="x" (click)="getmeddetails(x.id)">
+    </app-medservice-box>
+</div>
+<div class="md" *ngIf="meddetform&&!Newmedserform">
+
+    <div class=mdf>
+        
+        <div>
+            <app-medservice-detail [meddetail]="meddetails"></app-medservice-detail>O
+         </div>
+
+         <button style="margin-left: 10px; background-color: aquamarine;"(click)="getmeddetails(-1)">Back</button>
+         <span style="margin-left: 10px;" >Return to Overview of Medical Services </span>
+
+    </div>
+</div>
+
+<div class="mdn" *ngIf="Newmedserform">
+    <div class=mdnd>
+        <app-medservice-new></app-medservice-new>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

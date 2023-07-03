@@ -1,0 +1,126 @@
+
+#Loginbtn{
+
+    width: 100px;
+    height: 25px;
+
+}
+#build{
+ background-color: red;
+ width: 45%;
+ height: 500px;
+ left: 5px;
+ position: absolute;
+ margin-top: 40px;
+ 
+}
+
+#hospital{
+
+    width: 100%;
+    height: 100%;
+}
+
+#login-card{
+    height: 500px;
+    width: 50%;
+    margin-top: 40px;
+    /*margin-left: 40%;*/
+    left : 600px;
+    background-color: white;
+    box-shadow: 0px 2px 10px lightgray;
+    position: relative;
+    border:2px solid black;
+    float: left;
+    display: inline;
+
+}
+
+
+#image-logo{
+    background-color: red;
+    position:absolute ;
+    left: 10px;
+    top:30px;
+    height: 50px;
+    width:50px;
+    overflow: hidden;
+    object-fit: cover
+
+}
+
+#logo{
+
+    width: 100%;
+    height: 100%;
+}
+
+#image-left{
+    background-color: blue;
+    position: relative;
+    left: 75px;
+    top:10px;
+    height: 20%;
+    width:80%;
+    float: left;
+    overflow: hidden;
+}
+
+#image-center{
+    position: absolute;
+    left: 45%;
+    top:0px;
+    height: 35%;
+    width:35%;
+}
+#image-bottom-right{
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+    height: 25%;
+    width:25%;
+}
+
+#image-bottom-right img, #image-left img, #image-bottom-center img{
+    height: 100%;
+    width: 100%;
+}
+
+#log-table{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+input[type="text"], input[type="password"]{
+    height: 30px;
+    width: 200px;
+}
+
+button{
+    background-color: #2ECC71;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+th,td{
+    height: 50px;
+    width: 250px;
+}
+
+@media only screen and (max-width: 720px) {
+  #login-card{
+     width: 100%;
+     margin: 0px;
+     margin-left: 0px;
+  }
+}
+
+.loading, .errors{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    left: 25%;
+    color: green;
+}

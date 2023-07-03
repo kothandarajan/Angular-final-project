@@ -1,0 +1,55 @@
+<div class="rform">
+    <h3> New Doctor</h3>
+        <table>
+
+            <tr>
+                <td class="item-label"> Title</td>
+                <td>
+                    <select class="medium-input" [(ngModel)]="title">
+                        <option *ngFor="let x of titles">{{x}}</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="item-label"> Name </td>
+                  <td><input type="text" class="medium-input" [(ngModel)]="name"></td>
+              </tr>
+  
+            <tr>
+                <td class="item-label"> Gender</td>
+                <button ttToggle class="medium-input" class="untoggle" 
+                (click)="dotogglegender()">Female</button>
+
+            </tr>
+
+            <tr>
+                <td class="item-label"> Specialty</td>
+                <td>
+                    <select class="medium-input" [(ngModel)]="specialty">
+                        <option *ngFor="let x of specialtylist">{{x}}</option>
+                    </select>
+                </td>
+            </tr>
+
+ 
+            <tr>
+              <td class="item-label"> Contact </td>
+                <td><input type="text" class="medium-input" [(ngModel)]="contact"></td>
+            </tr>
+  
+ 
+
+
+
+            <tr>
+
+                <td style="text-align: center" colspan="2">
+                    <button mat-raised-button color="primary" type="submit" (click) ="postDoctor()">
+                        Post Doctor</button>
+                </td>
+            </tr>
+        </table>
+    
+
+</div>

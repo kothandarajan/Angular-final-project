@@ -1,0 +1,67 @@
+<div id = "build"><img id="hospital" src="http://localhost:8086/hospital2.jpg" alt="hospital"> </div>
+
+<div id="login-card" *ngIf="logform">
+    <div id="image-logo"><img id="logo" src="http://localhost:8086/SSLogo.jpg" alt="logo"></div>
+    <div id="image-left"><img id ="header" src="http://localhost:8086/SSheader.png" alt="company"></div>
+        <table id="log-table">
+             <tr>
+                 <th>Email</th>
+                 <td><input type="text" [(ngModel)]="email"></td>
+             </tr>
+             <tr>
+                 <th>Password</th>
+                 <td><input type="password" [(ngModel)]="password"></td>
+             </tr>
+             <tr>
+                 
+                 <td colspan=2 
+                     style="text-align:center"><button  (click)="login()">Login</button></td>
+             </tr>
+             <tr>
+                 
+                 <td colspan=2 
+                     style="text-align:center; color: lightgreen" (click)="toggle()">Not Registered yet? Click here</td>
+             </tr>
+        </table>
+        <div class="loading" *ngIf="status"><img src="http://localhost:8086/loading.gif"></div>
+        <div class="errors">{{error}}</div>
+        
+    </div>
+
+
+    <div id="login-card" *ngIf="!logform">
+        <div id="image-logo"><img id="logo" src="http://localhost:8086/SSLogo.jpg" alt="logo"></div>
+        <div id="image-left"><img id ="header" src="http://localhost:8086/SSheader.png" alt="company"></div>
+                <table id="log-table">
+                 <tr>
+                     <th>Username</th>
+                     <td><input type="text" [(ngModel)]="rusername"></td>
+                 </tr>
+                 <tr>
+                     <th>Password</th>
+                     <td><input type="password" [(ngModel)]="rpassword"></td>
+                 </tr>
+
+                 <tr>
+                    <th>Verify Password</th>
+                    <td><input type="password" [(ngModel)]="vpassword"></td>
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <td> <input type="text" [(ngModel)]="remail"></td>
+                </tr>
+                 <tr>
+                     
+                     <td colspan=2 
+                         style="text-align:center"><button (click)="register()">Register</button></td>
+                 </tr>
+                 <tr>
+                     
+                     <td colspan=2 
+                         style="text-align:center; color: lightgreen" (click)="toggle()">Not Registered yet? Click here</td>
+                 </tr>
+            </table>
+            <div class="loading" *ngIf="status"><img src="http://localhost:8086/loading.gif"></div>
+            <div class="errors">{{rerror}}</div>
+    </div>
